@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
-import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
-import './Home.css';
+import { Grid, Col, Image } from 'react-bootstrap';
+import './About.css';
 
 
 export default class Home extends Component {
     render() {
         return (
             <div>
-                ABOUT
+                <Image src="assets/tempfill1.jpeg" className="header-image" />
+                <Grid>
+                    <Col xs={12} sm={8} smOffset={2}>
+                        <Image src="assets/Toocool.jpg" className="about-profile-pic" rounded />
+                        <h3>Travis The Developer</h3>
+                        <p>Just some filler text here for now.</p>
+                    </Col>
+                </Grid>
             </div>
         )
     }
